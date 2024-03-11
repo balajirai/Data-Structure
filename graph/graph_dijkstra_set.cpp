@@ -2,7 +2,7 @@
 using namespace std;
 const int INF = 1e9;
 
-// Dijkstra Algorithm for Directed Graph (General) -> O(E + V^2)
+// Dijkstra Algorithm for Directed/Undirected and Weighted(positive)/Unweighted Graph (General) -> O(E + V^2)
 void dijkstra(int source, vector<bool>&vis, vector<int>&dist, vector<pair<int,int>>adj[]){
     // set pair {wt, node}
     set<pair<int,int>>st;
