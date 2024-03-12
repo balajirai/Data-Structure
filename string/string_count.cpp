@@ -1,15 +1,14 @@
-// count substring inside the given/original string
-
 #include <bits/stdc++.h>
 using namespace std;
 
+// count substring inside the given/original string
 int countSubstring(string &original, string &substring) {
     int count = 0;
     size_t pos = 0;
 
     while ((pos = original.find(substring, pos)) != string::npos) {
         count++;
-        pos += substring.length(); // this will fail here (original = bobob,   substring = bob, output = 1, correct ans = 2  )
+        pos++;
     }
     return count;
 }
@@ -26,3 +25,14 @@ int main(){
 
     return 0;
 }
+
+/*
+
+input :
+
+original : bobob
+substring: bob
+
+correct output : 2
+
+*/
