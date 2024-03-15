@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Disjoint set union Normal method
 
 // FIND 
 int find(int x, vector<int>& parent) {
