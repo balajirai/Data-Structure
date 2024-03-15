@@ -33,9 +33,9 @@ void Union (int x, int y) {
 
 
 // Kruskal's Algorithm
-int kruskal(vector<vector<int>> &vec) {
+int kruskal(vector<vector<int>> &edges) {
     int sum = 0;
-    for(auto &temp : vec) {
+    for(auto &temp : edges) {
         
         int u = temp[0];
         int v = temp[1];
