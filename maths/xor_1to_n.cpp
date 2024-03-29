@@ -2,8 +2,7 @@
 using namespace std;
 
 /*
-XOR from 1 to n
-Efficient method :
+Find XOR from 1 to n (Efficient method) :
 
 1- Find the remainder of n by moduling it with 4.
 2- If rem = 0, then XOR will be same as n.
