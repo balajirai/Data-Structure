@@ -43,4 +43,8 @@ So the only remaining forms that might (not necessarily) be prime are:
 
 So, only 6k±1 can possibly be prime
 
+Here: (n % i == 0 || n % (i + 2) == 0)
+n % i == 0 → is actually checking for 6k-1 (or 6k+5) form
+n % (i + 2) == 0 → is actually checking for 6k+1 form
+
 */
