@@ -1,14 +1,20 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main(){
-    int a = 5;
-    int* p ;
-    p =  &a;
+    int num = 5;
+    int *ptr = &num;   // pointer variable which stores the address of num
 
-    cout<<"Pointer p is : "<<p<<endl;
-    cout<<"Adddress of a : "<<&a<<endl;
-    cout<<"Adddress of pointer p : "<<&p<<endl;
+    cout<<"num: "<< num <<endl;
+    cout<<"ptr: "<< ptr <<endl;
 
-    // address of a is same as the pointer p
-return 0;
+    // address of num & pointer
+    cout<<"Address of num (&num): "<< &num <<endl;
+    cout<<"Adddress of pointer ptr (&ptr): "<< &ptr <<endl;
+
+    cout<<"ptr  : "<<ptr<<endl;
+    cout<<"*ptr : "<<*ptr<<endl;
+
+    cout<<"size of integer : "<<sizeof(num)<<endl;
+    cout<<"size of pointer : "<<sizeof(ptr)<<endl;
+    return 0;
 }
