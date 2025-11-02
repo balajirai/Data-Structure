@@ -23,7 +23,7 @@ int main(){
 
     // push_back 
     v.push_back(7);    // O(1)
-    v.push_back(34);
+    v.push_back(34);   // O(1) -> amortized, may take O(n) when reallocation happens
     v.pop_back();      // O(1)
     printv(v);
 
